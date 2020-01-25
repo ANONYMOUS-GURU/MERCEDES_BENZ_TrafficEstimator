@@ -1,0 +1,53 @@
+body{
+  background-position: top left;
+  background-attachment: relative;
+  background-color: #151516;
+  background-repeat: repeat; 
+  background-size: 40% 40%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+ {box-sizing: border-box;}
+
+.hed{
+  display:flex;
+  align-items: center;
+  background-color: rgba(105,105,131,0.3);
+  color:#fff;
+  justify-content: center;
+  background-opacity: 0.5;
+}
+#hd1{
+  flex-grow: 25;
+}
+
+
+#app{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#my_camera{
+}
+
+#comm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#cbox{
+  display: inline-block;
+  background-color: lightgrey;
+  padding:0.4%;
+  text-align:center;
+  font-size: 2.5em;
+  width:230px;
+}
+
+
+#snap{
+  width:150px
+}

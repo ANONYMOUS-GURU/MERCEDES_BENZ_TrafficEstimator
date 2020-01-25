@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Team NARCOS</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='{{url_for("static",filename="materialize.css")}}'>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  <script src='{{url_for("static",filename="jquery.js")}}'></script>
+  <script src="https://kit.fontawesome.com/b6041ef52e.js" crossorigin="anonymous"></script>
+  <script src='{{url_for("static",filename="webcam.js")}}'></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<body>
+<!-- partial:index.partial.html -->
+<div class="hed">
+  <div id='hd1'><center><h3>Traffic Predictor For Autonomous Cars</h3></center></div>
+  <div id="inpfile"><input type="file" accept="video/*"><br><button id="cam">Live Cam</button></div>
+
+</div>
+  
+<div id="app">
+  <div id="grid1">
+    <div></div>
+  
+    <div><img id="img1"><br>
+      <span class="l1">INPUT</span>
+    </div>
+    <div></div>
+  </div>
+  
+  <div id="grid2">
+    <div id="g21"><img id="img2"><br>
+      <span class="l2">SEGMENTATION</span>
+    </div>
+  
+    <div></div>
+  
+    <div id="g22"><img id="img3"><br>
+      <span class="l3" id="out">TRAFFIC OUTPUT</span>
+    </div>
+  </div>
+  <div id="weather" style="background-color: white; display: flex; width: 60%;margin-left: 20%;">
+    <div style="width: 33%;">
+      <center>
+      <button id="sunny" style="font-size: 50px;">
+        <i class="fas fa-sun"></i>
+          Sunny
+      </button>
+      </center>
+    </div>
+    <div style="width: 33%;">
+      <center>
+        <button id="cloudy" style="font-size: 50px;">
+          <i class="fas fa-cloud"></i>
+          Cloudy
+        </button>
+      </center>
+    </div>
+    <div style="width: 33%;">
+      <center>
+        <button id="rainy" style="font-size: 50px;">
+          <i class="fas fa-cloud-showers-heavy" style="font-size: 50px;"></i>
+          Rainy
+        </button>
+      </center>
+    </div>
+  </div>
+  <div id="pbar">
+    <div class="progress" style="width: 8px; margin-left: 10%;width: 80%;margin-right: 10%;" align="center">
+      <div class="determinate" id="prg" style="width: 0%"></div>
+    </div>
+  </div>
+
+  <div>
+    <button id="snap" class="btn waves-effect waves-light">START</button>
+  </div>
+
+</div>
+  
+ <div id="hide">
+   <div id="message"></div>
+<video id="video" controls></video>
+
+<canvas id="canvas" width="640" height="480"></canvas>
+ <div id="my_camera"></div>
+   </div>
+
+</body>
+</html>
+<!-- partial -->
+
+  <script  src='{{url_for("static",filename="script.js")}}'>
+   
+  </script>
+
+  
+</body>
+</html>

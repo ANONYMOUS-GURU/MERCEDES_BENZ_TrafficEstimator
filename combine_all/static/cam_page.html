@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by  Naman2017</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>narcos - webapp</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='app_style.css')}}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="hed">
+<div id='hd1'><center><h3>Traffic Predictor For Autonomous Cars</h3></center></div>
+
+  </div>
+  
+<div id="app">
+<div id="setup">
+<div id="my_camera"></div>
+</div>
+<div id="comm">
+  <center>
+  <div id="cbox">
+    Prediction
+  </div>
+  <br><br>
+  <div class="container">
+   <button id="snap" class="waves-effect waves-light btn">Capture</button>
+  </div>
+    </center>
+  </div>
+  </div>
+  
+  
+  
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script  src="{{url_for('static',filename='app_script.js')}}"></script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./cam_script.js"></script>
+
+</body>
+</html>

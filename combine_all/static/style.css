@@ -1,0 +1,169 @@
+body{
+  background-position: top left;
+  background-attachment: relative;
+  background-color: #151516;
+  background-repeat: repeat; 
+  background-size: 40% 40%;
+  
+  font-family: "Times New Roman", Times, serif;
+}
+ {box-sizing: border-box;}
+
+.hed{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  background-color: rgba(105,105,131,0.3);
+  color:#fff;
+  background-opacity: 0.5;
+  font-family: 'Lobster', cursive;
+}
+#hd1{
+  grid-column-start: 2;
+  grid-column-start: 4;
+}
+#inpfile {
+  background-color: grey;
+  padding: 1.2%;
+}
+
+#pbar{
+  margin: 10px;
+
+}
+
+#snap{
+  position: relative;
+  left: 46%;
+}
+
+#cloudy,#rainy,#sunny {
+  border: none;
+  background: white;
+  opacity:0.4;
+}
+
+
+
+#app{}
+
+#grid1 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  grid-row-gap: 50px;
+  grid-colummn-gap: 50px;
+  margin-bottom: 25px;
+}
+
+#grid2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  grid-row-gap: 50px;
+  grid-colummn-gap: 50px;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 256px;
+  height: 256px;
+}
+
+.l1 {
+  position: relative;
+  color: #fff;
+  background-color: #444;
+  left: 38%;
+  font-size: 1.4em;
+  padding: 2%;
+  border-radius: 100%;
+}
+
+.l2 {
+  position: relative;
+  color: #fff;
+  background-color: #444;
+  left: 10%;
+  font-size: 1.4em;
+  padding :2.5%;
+  border-radius: 40%;
+}
+
+.l3 {
+  position: relative;
+  color: #fff;
+  background-color: #444;
+  left: 20%;
+  font-size: 1.4em;
+  border-radius: 40%;
+  padding:2.5%;
+}
+
+video,
+input {
+  display: block;
+}
+
+input {
+  width: 100%;
+}
+
+.info {
+  background-color: aqua;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}
+
+@media screen and (min-width: 1921px) {
+  img {
+    width: 512px;
+    height: 512px;
+  }
+
+  #grid1 {
+    margin-bottom: 50px;
+  }
+
+  #grid2 {
+    margin-bottom: 50px;
+  }
+
+
+  .l1 {
+    font-size: 3em;
+  }
+  
+  .l2 {
+    font-size: 2.5em;
+    padding: 2%;
+  }
+  
+  .l3 {
+    font-size: 2.5em;
+    padding: 2%;
+  }
+
+  #snap {
+    left: 40%;
+    width: 20%;
+    font-size: 3rem;
+    height: 4vw;
+  }
+
+  h3 {
+    font-size: 4.5rem;
+  }
+
+}
+
+#g21{
+  padding-right: 20%;
+}
+#g22{
+  padding-left: 20%;
+}
